@@ -4,4 +4,4 @@
     )
 }}
 
-select * from DBT_RAW.GLOBALMART.ORDERS
+select * from {{ source('globalmart', 'orders') }}
